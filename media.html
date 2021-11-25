@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/68fbfa40ac.js" crossorigin="anonymous"></script>
+        <style>
+            .indicator-item.active{
+                background-color: #f06292 !important;
+            }
+            .indicator-item{
+                background-color: #d81b60 !important;
+            }
+        </style>
+        <title>Media</title>
+</head>
+<body class="grey darken-4">
+    <div class="container">
+        <h1 class="pink-text text-darken-1">Media</h1>
+        <!-- materialboxed -->
+        <div class="row">
+            <div class="col s12 m6">
+                <img src="img/music2.jpg" class="materialboxed" alt="" width="100%">
+            </div>
+            <!-- With Caption -->
+            <div class="col s12 m6">
+                <img src="img/music4.jpg" class="materialboxed" data-caption="This is my life" alt="" width="100%">
+            </div>
+        </div>
+
+        <!-- Slider -->
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="img/music11.jpg" alt="">
+                    <!-- Center Align Caption -->
+                    <div class="caption center-align">
+                        <h3 class="pink-text text-lighten-1">Center Caption</h3>
+                        <p class="pink-text text-lighten-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia rem facere alias, officiis magni saepe non consequatur pariatur consequuntur fugiat, exercitationem nisi laboriosam dignissimos, laborum sunt eveniet molestias! Magnam, consequuntur.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/music10.jpg" alt="">
+                    <!-- left Align Caption -->
+                    <div class="caption left-align">
+                        <h3 class="blue-text text-darken-4">Left Caption</h3>
+                        <p class="blue-text text-darken-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia rem facere alias, officiis magni saepe non consequatur pariatur consequuntur fugiat, exercitationem nisi laboriosam dignissimos, laborum sunt eveniet molestias! Magnam, consequuntur.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/music6.jpg" alt="">
+                    <!-- Right Align Caption -->
+                    <div class="caption right-align">
+                        <h4 class="amber-text text-accent-4">Right Caption</h4>
+                        <p class="amber-text text-accent-4">Lorem ipsum dolo4 sit amet consectetur adipisicing elit. Quia rem facere alias, officiis magni saepe non consequatur pariatur consequuntur fugiat, exercitationem nisi laboriosam dignissimos, laborum sunt eveniet molestias! Magnam, consequuntur.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/music7.jpg" alt="">
+                    <!-- Center Align Caption -->
+                    <div class="caption center-align">
+                        <h3 class="amber-text text-lighten-5">Center Caption</h3>
+                        <p class="amber-text text-lighten-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia rem facere alias, officiis magni saepe non consequatur pariatur consequuntur fugiat, exercitationem nisi laboriosam dignissimos, laborum sunt eveniet molestias! Magnam, consequuntur.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <br>
+        <!-- Responsive Image -->
+        <div class="row">
+            <div class="col s12 m6">
+                <img src="img/music5.jpg" alt="" class="responsive-img">
+            </div>
+            <div class="col s12 m6">
+                <img src="img/music12.jpg" alt="" class="responsive-img circle">
+                <img src="img/music1.jpg" alt="" class="responsive-img circle">
+            </div>
+        </div>
+
+        <!-- Responsive video embed -->
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="video-container">
+                    <iframe width="890" height="593" src="https://www.youtube.com/embed/QCN2KXgNQdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <!-- Responsive Video Element -->
+                <video class="responsive-video" controls>
+                    <source src="videos/somevideo.mp4">
+                </video>
+            </div>
+        </div>
+        <!--End of container  -->
+    </div>
+    
+
+
+        <!-- JQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        // Materialized init
+        $('.materialboxed').materialbox();
+        // Slider init
+        $('.slider').slider({
+            indicators: false,
+            height: 500,
+            interval:2000
+        });
+    });
+</script>
+</body>
+</html>
